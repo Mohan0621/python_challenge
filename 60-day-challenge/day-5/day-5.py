@@ -69,7 +69,6 @@ for i in weights:
     else:
         overload+=[i]
 
-
 total_valid = len(very_light) + len(Normal_load) + len(heavy_load) + len(overload)
 affected=len(very_light)
 
