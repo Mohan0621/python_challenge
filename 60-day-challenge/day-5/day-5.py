@@ -70,12 +70,12 @@ for i in weights:
         overload+=[i]
 
 total_valid = len(very_light) + len(Normal_load) + len(heavy_load) + len(overload)
-affected=len(very_light)
+affected=len(overload)
 
 print("\nInvalid Entries:", invalid)
 print("Normal Load:", Normal_load)
 print("Heavy Load:", heavy_load)
+print("light_weights:",very_light)
 print("Overload:", overload)
-
-print("\nTotal valid weights:", total_valid)
+print("\nTotal valid weights:", total_valid-len(overload))
 print("Items affected by PLI rule:", affected)
