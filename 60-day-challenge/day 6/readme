@@ -1,0 +1,24 @@
+this python challenge about Smart Playlist Intelligence System
+we should do this:
+      1. Accepts a list of song durations
+      2. Uses Python logic + inbuilt functions to analyze the playlist
+      3. Categorizes the playlist
+      4. Produces a final recommendation
+and for validation : any thing that have -ve durations is invalid
+
+
+playist Analysis:
+        Too Short Playlist
+        Total duration &lt; 300 seconds
+        Too Long Playlist
+        Total duration &gt; 3600 seconds
+        Repetitive Playlist
+        If the same duration appears more than once
+        Balanced Playlist
+       If:
+       No invalid entries
+       Not too short or too long
+       No repetition
+       Duration values vary reasonably
+      Irregular Playlist
+      Any playlist that does not fit the above categories

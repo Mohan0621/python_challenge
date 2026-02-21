@@ -51,7 +51,7 @@ Example Input'''
 n=int(input("enter no of weights"))
 weights=[0]*n
 for i in range(n):
-    weights[0]=int(input("enter the weight"))
+    weights[i]=int(input("enter the weight"))
 invalid=[]
 very_light=[]
 Normal_load=[]
@@ -68,14 +68,17 @@ for i in weights:
         heavy_load+=[i]
     else:
         overload+=[i]
+affected=len(very_light)
+very_light=[]   
 
-total_valid = len(very_light) + len(Normal_load) + len(heavy_load) + len(overload)
-affected=len(overload)
+total_valid = len(Normal_load) + len(heavy_load) + len(overload)
 
 print("\nInvalid Entries:", invalid)
+print("Very Light:", very_light)
 print("Normal Load:", Normal_load)
 print("Heavy Load:", heavy_load)
-print("light_weights:",very_light)
 print("Overload:", overload)
-print("\nTotal valid weights:", total_valid-len(overload))
+
+print("\nTotal valid weights:", total_valid)
 print("Items affected by PLI rule:", affected)
+
